@@ -1,0 +1,218 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+
+body{
+overflow-x: hidden;
+overflow-y: scroll;
+}
+
+
+/*--------------------- Navbar ---------------------*/
+nav /*boven*/
+{
+	background: darkslategray;
+	opacity: 1;
+  position: fixed;
+  list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	z-index: 50;
+}
+
+nav ul /* navagatie bar */
+{
+    background: linear-gradient(90deg,
+     rgba(33, 91, 155, 0.6) 0%,
+     rgba(33, 91, 155, 0.6) 25%,
+     rgba(33, 91, 155, 0.6) 75%,
+     rgba(33, 91, 155, 0.6) 100%);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
+     inset 0 0 1px rgba(255, 255, 255, 0.6);
+     width: 100vw;
+
+
+}
+
+nav ul li
+{
+    display: inline-block;
+}
+
+nav ul li a /* Tekst navagatie bar */
+{
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    font-family: arial, helvetica, sans-serif;
+    text-decoration: none;
+    display: block;
+ }
+
+ nav ul li a:hover {
+	background-color: #363435;
+}
+
+/*^^^^^^^^^^^^^^^^^^^^^ Navbar ^^^^^^^^^^^^^^^^^^^^^*/
+
+
+
+
+
+
+.grid {
+	display: grid;
+	grid-template-columns: 50vw 50vw;
+	grid-template-rows:100vh 72vh 72vh 72vh 72vh;
+	grid-template-areas:
+  "home home"
+	"section1 section2"
+	"section3 section4"
+	"section5 section6"
+	"section7 section8";
+  /* grid-gap: 10px; */
+
+}
+
+
+
+/*--------------------- Home ---------------------*/
+.home{
+  grid-area: home;
+  background-image: url("web_images/Homeachtergrond.JPG");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+/*^^^^^^^^^^^^^^^^^^^^^ Home ^^^^^^^^^^^^^^^^^^^^^*/
+/*--------------------- Section1 ---------------------*/
+.section1{
+  grid-area: section1;
+  background: #363435; /*gray*/
+}
+
+.section1text{
+  padding-top: 10%;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+/*^^^^^^^^^^^^^^^^^^^^^ Section1 ^^^^^^^^^^^^^^^^^^^^^*/
+
+/*--------------------- Section2 ---------------------*/
+.section2{
+  grid-area: section2;
+  background: #f2f7ed; /*white*/
+
+}
+
+
+
+/*^^^^^^^^^^^^^^^^^^^^^ Section2 ^^^^^^^^^^^^^^^^^^^^^*/
+
+/*--------------------- Section3 ---------------------*/
+.section3{
+  grid-area: section3;
+  background: #f2f7ed; /*white*/
+}
+/*^^^^^^^^^^^^^^^^^^^^^ Section3 ^^^^^^^^^^^^^^^^^^^^^*/
+
+/*--------------------- Section4 ---------------------*/
+.section4{
+  grid-area: section4;
+  background: #363435; /*gray*/
+}
+/*^^^^^^^^^^^^^^^^^^^^^ Section4 ^^^^^^^^^^^^^^^^^^^^^*/
+
+/*--------------------- Section5 ---------------------*/
+.section5{
+  grid-area: section5;
+  background:#363435; /*gray*/
+}
+/*^^^^^^^^^^^^^^^^^^^^^ Section5 ^^^^^^^^^^^^^^^^^^^^^*/
+
+/*--------------------- Section6 ---------------------*/
+.section6{
+  grid-area: section6;
+  background: #f2f7ed; /*white*/
+}
+/*^^^^^^^^^^^^^^^^^^^^^ Section6 ^^^^^^^^^^^^^^^^^^^^^*/
+
+/*--------------------- Section7 ---------------------*/
+.section7{
+  grid-area: section7;
+  background: #f2f7ed; /*white*/
+}
+/*^^^^^^^^^^^^^^^^^^^^^ Section7 ^^^^^^^^^^^^^^^^^^^^^*/
+
+/*--------------------- Section8 ---------------------*/
+.section8{
+  grid-area: section8;
+  background: #363435; /*gray*/
+}
+/*^^^^^^^^^^^^^^^^^^^^^ Section8 ^^^^^^^^^^^^^^^^^^^^^*/
+
+
+
+
+/*--------------------- Fonts ---------------------*/
+
+.p1{ /* Kopjes voor zwart achtergrond */
+  font-size: 200%;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+}
+.textwhite{
+color: white;
+font-family: sans-serif, "Lucida Grande";
+}
+/*^^^^^^^^^^^^^^^^^^^^^ Fonts ^^^^^^^^^^^^^^^^^^^^^*/
+
+
+
+/*--------------------- Foto's ---------------------*/
+.fotoright{
+  width: 97%;
+  height: auto;
+  padding-left: 11%;
+  padding-top: 7%;
+}
+.fotoleft{
+  width: 97%;
+  height: auto;
+  margin-left: -7%;
+  padding-top: 7%;
+}
+
+/*^^^^^^^^^^^^^^^^^^^^^ Foto's ^^^^^^^^^^^^^^^^^^^^^*/
+
+/*^^^^^^^^^^^^^^^^^^ social buttens^^^^^^^^^^^^^^^^*/
+
+#social {
+position: fixed;
+top: 0%;
+right: 1%;
+/* width: 50px; */
+padding: 12px 0px;
+text-align: center;
+transition:  linear 0s;
+ }
+
+#social > button{ display:inline; background-color:transparent; background-image:url(share_icon.png); width:36px; height:36px; border:none; cursor:pointer; margin:4px auto; opacity:1; transition:  linear 0s; }
+#social > button:nth-child(1){background-position:0px;}
+#social > button:nth-child(2){background-position:-36px;}
+#social > button:nth-child(3){background-position:-72px;}
+#social > button:nth-child(4){background-position:-252px;}
+
+
+}
+
+
+ /*^^^^^^^^^^^^^^^^ social buttens end ^^^^^^^^^^^^^^^^^^^^^*/
